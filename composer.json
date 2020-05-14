@@ -1,0 +1,33 @@
+{
+    "name": "d8vjork/laravel-optimizely",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rubén Robles",
+            "email": "d8vjork@outlook.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "guzzlehttp/guzzle": "^6.3.1|^7.0",
+        "illuminate/support": "~5.5.0|^6.0|^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "D8vjork\\LaravelOptimizely\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "D8vjork\\LaravelOptimizely\\ServiceProvider"
+            ]
+        }
+    }
+}
